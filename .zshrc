@@ -205,3 +205,4 @@ set -o vi
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%} %c%{$fg[red]%}]%{$reset_color%}$%b "
 
 source /home/saurav/.my_shell_rc.sh
+
