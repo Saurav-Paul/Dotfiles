@@ -31,12 +31,12 @@ let g:which_key_map[';'] = [ ':Commands'                  , 'commands' ]
 let g:which_key_map['='] = [ '<C-W>='                     , 'balance windows' ]
 let g:which_key_map[','] = [ 'Startify'                   , 'start screen' ]
 let g:which_key_map['c'] = [ ':Codi!!'                    , 'virtual repl']
-let g:which_key_map['D'] = [ ':bd'                        , 'delete buffer']
+let g:which_key_map['d'] = [ ':bd'                        , 'delete buffer']
 let g:which_key_map['e'] = [ ':CocCommand explorer'       , 'explorer' ]
 let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
 let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
 let g:which_key_map['q'] = [ 'q'                          , 'quit' ]
-let g:which_key_map['R'] = [ ':RnvimrToggle'              , 'ranger' ]
+let g:which_key_map['r'] = [ 'RnvimrToggle'              , 'ranger' ]
 let g:which_key_map['S'] = [ ':SSave'                     , 'save session' ]
 let g:which_key_map['T'] = [ ':Rg'                        , 'search text' ]
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
@@ -58,6 +58,22 @@ let g:which_key_map.a = {
       \ 'v' : [':Vista!!'                , 'tag viewer'],
       \ }
 
+" t for interacting with ai-virtual-assistant
+let g:which_key_map.t = {
+      \ 'name' : 'ai-virtual-assistant' ,
+      \ 't' : [':term Cp test %'            , 'Test'],
+      \ 'a' : [':term Cp add'               , 'Add testcase'],
+      \ 'l' : [':term Cp parse'             , 'Parse Problem'],
+      \ 'A' : [':term ai'                   , 'Ai-virtual-assistant'],
+      \ 'R' : [':term Cp -r %'              , 'Run once'],
+      \ 'r' : [':term Cp -r -100 %'         , 'Run multiple time'],
+      \ 'd' : [':term Cp -r -d -100 %'      , 'Run multiple time with debug'],
+      \ 'D' : [':term Cp -r -d %'           , 'Run once with debug'],
+      \ 'S' : [':term Cp submit %'          , 'Submit code'],
+      \ 's' : [':!Cp standing'          , 'Open standing page in browser'],
+      \ 'o' : [':!Cp open'              , 'Open problem in browser'],
+      \ }
+
 " b is for buffer
 let g:which_key_map.b = {
       \ 'name' : '+buffer' ,
@@ -69,7 +85,7 @@ let g:which_key_map.b = {
       \ 'l' : ['blast'     , 'last-buffer']     ,
       \ 'n' : ['bnext'     , 'next-buffer']     ,
       \ 'p' : ['bprevious' , 'previous-buffer'] ,
-      \ '?' : ['Buffers'   , 'fzf-buffer']      ,
+      \ 'b' : ['Buffers'   , 'fzf-buffer']      ,
       \ }
 
 " s is for search
@@ -78,8 +94,8 @@ let g:which_key_map.s = {
       \ '/' : [':History/'              , 'history'],
       \ ';' : [':Commands'              , 'commands'],
       \ 'a' : [':Ag'                    , 'text Ag'],
-      \ 'b' : [':BLines'                , 'current buffer'],
-      \ 'B' : [':Buffers'               , 'open buffers'],
+      \ 's' : [':BLines'                , 'current buffer'],
+      \ 'b' : [':Buffers'               , 'open buffers'],
       \ 'c' : [':Commits'               , 'commits'],
       \ 'C' : [':BCommits'              , 'buffer commits'],
       \ 'f' : [':Files'                 , 'files'],
@@ -92,7 +108,7 @@ let g:which_key_map.s = {
       \ 'M' : [':Maps'                  , 'normal maps'] ,
       \ 'p' : [':Helptags'              , 'help tags'] ,
       \ 'P' : [':Tags'                  , 'project tags'],
-      \ 's' : [':CocList snippets'      , 'snippets'],
+      \ 'B' : [':CocList snippets'      , 'snippets'],
       \ 'S' : [':Colors'                , 'color schemes'],
       \ 't' : [':Rg'                    , 'text Rg'],
       \ 'T' : [':BTags'                 , 'buffer tags'],
@@ -112,7 +128,7 @@ let g:which_key_map.g = {
       \ 'c' : [':Git commit'                       , 'commit'],
       \ 'd' : [':Git diff'                         , 'diff'],
       \ 'D' : [':Gdiffsplit'                       , 'diff split'],
-      \ 'g' : [':term lazygit'                            , 'Lazy git'],
+      \ 'g' : [':term lazygit'                     , 'Lazy git'],
       \ 'x' : [':GGrep'                            , 'git grep'],
       \ 'G' : [':Gstatus'                          , 'status'],
       \ 'h' : [':GitGutterLineHighlightsToggle'    , 'highlight hunks'],
@@ -188,7 +204,7 @@ let g:which_key_map.2 = {
 " w is for wiki
 let g:which_key_map.w = {
       \ 'name' : '+wiki' ,
-      \ 'w' : ['<Plug>VimwikiIndex'                              , 'ncdu'],
+      \ 'w' : ['<Plug>VimwikiIndex'                              , 'Vim wiki index'],
       \ 'n' : ['<plug>(wiki-open)'                              , 'ncdu'],
       \ 'j' : ['<plug>(wiki-journal)'                              , 'ncdu'],
       \ 'R' : ['<plug>(wiki-reload)'                              , 'ncdu'],

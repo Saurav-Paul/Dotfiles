@@ -11,14 +11,13 @@ nnoremap <Space> <Nop>
 " Custom keymap
 vnoremap<leader>1 :Commentary<Cr>
 nnoremap<leader>1 :Commentary<Cr>
-nnoremap<leader>t :term Cp test %<Enter>
-nnoremap<leader>r :term Cp -r -100 %<Enter>
-nnoremap<leader>R :term Cp -r %<Enter>
-nnoremap<leader>d :term Cp -r -d -100 %<Enter>
+" nnoremap<leader>t :term Cp test %<Enter>
+" nnoremap<leader>r :term Cp -r -100 %<Enter>
+" nnoremap<leader>R :term Cp -r %<Enter>
+" nnoremap<leader>d :term Cp -r -d -100 %<Enter>
 "nnoremap<leader>D :term Cp -r -d %<Enter>
-nnoremap<leader>a :term Cp add<Enter>
+" nnoremap<leader>a :term Cp add<Enter>
 
-nnoremap z :let @/ = ""<cr>
 nnoremap Z gg=G'.
 
 " nnoremap s o<Esc>
