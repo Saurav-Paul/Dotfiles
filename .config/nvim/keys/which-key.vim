@@ -63,7 +63,7 @@ let g:which_key_map.t = {
       \ 'name' : 'ai-virtual-assistant' ,
       \ 't' : [':term Cp test %'            , 'Test'],
       \ 'a' : [':term Cp add'               , 'Add testcase'],
-      \ 'l' : [':term Cp parse'             , 'Parse Problem'],
+      \ 'p' : [':term Cp parse'             , 'Parse Problem'],
       \ 'A' : [':term ai'                   , 'Ai-virtual-assistant'],
       \ 'R' : [':term Cp -r %'              , 'Run once'],
       \ 'r' : [':term Cp -r -100 %'         , 'Run multiple time'],

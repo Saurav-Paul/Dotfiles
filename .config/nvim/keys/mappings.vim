@@ -68,7 +68,7 @@ else
    " Alternate way to save
   nnoremap <silent> <C-s> :w<CR>
   " Alternate way of selecting all
-  nnoremap <silent> <C-a> ggvG
+  nnoremap <silent> <C-a> ggVG
   " Alternate way to quit
   nnoremap <silent> <C-Q> :wq!<CR>
   " Use control-c instead of escape
