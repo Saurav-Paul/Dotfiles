@@ -36,8 +36,12 @@ stow zsh
 
 The directory structure inside each package should mirror the path relative to `$HOME`.
 
-## Removing a config
+## Useful commands
 
 ```bash
-stow -D tmux   # removes the symlink
+stow -D tmux    # remove symlinks for a package
+stow -R tmux    # restow — remove + recreate symlinks (use after adding/removing files in a package)
+stow -t ~ tmux  # explicitly target $HOME (needed if repo isn't directly in $HOME)
 ```
+
+Editing existing files doesn't require restow — symlinks point to the real file, so changes are picked up instantly.
