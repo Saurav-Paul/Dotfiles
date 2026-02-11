@@ -6,7 +6,7 @@ Personal configuration files managed with [GNU Stow](https://www.gnu.org/softwar
 
 ```bash
 # Clone the repo
-git clone git@github.com:<your-username>/Dotfiles.git ~/Dotfiles
+git clone git@github.com:Saurav-Paul/Dotfiles.git ~/Dotfiles
 cd ~/Dotfiles
 
 # Install stow
