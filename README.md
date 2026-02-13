@@ -24,6 +24,7 @@ stow tmux
 | Package | Creates symlink |
 |---------|----------------|
 | `tmux`  | `~/.tmux.conf` |
+| `nvim`  | `~/.config/nvim/` |
 
 ## Adding a new config
 
