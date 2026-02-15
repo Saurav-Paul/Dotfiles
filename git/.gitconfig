@@ -1,0 +1,23 @@
+[init]
+	defaultBranch = main
+[user]
+	name = Saurav Paul
+	email = sauravpaul.sunny@gmail.com
+
+[core]
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	dark = true
+	line-numbers = true
+	syntax-theme = Catppuccin Mocha
+
+[merge]
+	conflictstyle = zdiff3
+
+[diff]
+	colorMoved = default
