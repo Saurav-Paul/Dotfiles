@@ -1,0 +1,48 @@
+# Starship Prompt — Catppuccin Mocha colors
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$python\
+$nodejs\
+$docker_context\
+$cmd_duration\
+$line_break\
+$character"""
+
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+style = "bold #b4befe"
+
+[git_branch]
+format = "[$branch]($style) "
+style = "bold #cba6f7"
+
+[git_status]
+format = '([$all_status$ahead_behind]($style) )'
+style = "#f38ba8"
+
+[python]
+format = '[${version}]($style) '
+style = "#f9e2af"
+detect_files = ["pyproject.toml", "requirements.txt"]
+
+[nodejs]
+format = '[${version}]($style) '
+style = "#a6e3a1"
+
+[docker_context]
+format = '[${context}]($style) '
+style = "#89b4fa"
+only_with_files = true
+
+[cmd_duration]
+min_time = 3_000
+format = '[$duration]($style) '
+style = "#a6adc8"
+
+[character]
+success_symbol = "[>](bold #a6e3a1)"
+error_symbol = "[>](bold #f38ba8)"
