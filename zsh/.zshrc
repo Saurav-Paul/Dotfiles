@@ -21,6 +21,9 @@ source <(fzf --zsh)
 # zoxide
 eval "$(zoxide init zsh --cmd cd)"
 
+# zsh-autosuggestions
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # starship
 eval "$(starship init zsh)"
 

@@ -13,7 +13,7 @@ $character"""
 
 [directory]
 truncation_length = 3
-truncate_to_repo = true
+truncate_to_repo = false
 style = "bold #b4befe"
 
 [git_branch]
