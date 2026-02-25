@@ -1,4 +1,4 @@
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$HOME/.local/bin:$PATH"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
