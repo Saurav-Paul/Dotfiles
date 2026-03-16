@@ -5,6 +5,13 @@ export VISUAL="nvim"
 # fnm
 eval "$(fnm env --use-on-cd)"
 
+# git worktree switcher (requires fzf)
+gw() {
+  local dir
+  dir=$(git worktree list | fzf --height 40% | awk '{print $1}')
+  [ -n "$dir" ] && cd "$dir"
+}
+
 # aliases
 alias cat="bat"
 alias ls="eza"
