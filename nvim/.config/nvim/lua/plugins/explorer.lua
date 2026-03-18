@@ -2,6 +2,11 @@ return {
   {
     "folke/snacks.nvim",
     opts = {
+      zen = {
+        win = {
+          width = 0,
+        },
+      },
       picker = {
         sources = {
           explorer = {
