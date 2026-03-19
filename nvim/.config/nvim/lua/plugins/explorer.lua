@@ -2,6 +2,9 @@ return {
   {
     "folke/snacks.nvim",
     opts = {
+      explorer = {
+        replace_netrw = false,
+      },
       zen = {
         win = {
           width = 0,
