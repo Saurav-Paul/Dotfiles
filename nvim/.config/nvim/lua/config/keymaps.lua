@@ -9,3 +9,6 @@ vim.keymap.set("n", "<leader>ff", function()
     exclude = { ".venv", "node_modules", ".git" },
   })
 end, { desc = "Find Files" })
+
+-- Marks
+vim.keymap.set("n", "<leader>fm", function() Snacks.picker.marks() end, { desc = "Find Marks" })
