@@ -3,7 +3,7 @@ return {
     "folke/snacks.nvim",
     opts = {
       explorer = {
-        replace_netrw = false,
+        replace_netrw = true,
       },
       zen = {
         win = {
